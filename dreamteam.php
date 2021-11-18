@@ -36,4 +36,7 @@ function plugin_init() {
   (new OptimizeJavaScript)->run();
   (new RegisterPostTypes)->run();
   (new RegisterTaxonomies)->run();
+
+  // Example without 'use' keywords
+  require_once('src/Dreamteam/RegisterOtherPostTypes.php');
 }
